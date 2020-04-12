@@ -1,9 +1,9 @@
 package game.equipamento;
 
 public abstract class Bota {
-     int forca ;
-     int agilidade ;
-     int inteligencia ;
+     protected int forca;
+     protected int agilidade;
+     protected int inteligencia;
 
      public int getForca() {
           return forca;
