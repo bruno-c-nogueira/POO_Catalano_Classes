@@ -3,18 +3,12 @@ package game.personagem;
 public class Arqueiro extends Personagem {
 
     public Arqueiro() {
-        this.forca = 5;
-        this.agilidade = 10;
-        this.inteligencia = 2;
-        super.init();
+        super(5, 10, 2);
     }
 
     @Override
     public void levelUp() {
-        this.forca += 1;
-        this.agilidade += 3;
-        this.inteligencia += 1;
-        super.init();
+        super.levelUp(1, 3, 1);
     }
 
     @Override

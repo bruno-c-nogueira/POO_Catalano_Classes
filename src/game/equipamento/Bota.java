@@ -1,9 +1,15 @@
 package game.equipamento;
 
 public abstract class Bota {
-     protected int forca;
-     protected int agilidade;
-     protected int inteligencia;
+     private int forca;
+     private int agilidade;
+     private int inteligencia;
+
+     public Bota(int forca, int agilidade, int inteligencia) {
+          this.forca = forca;
+          this.agilidade = agilidade;
+          this.inteligencia = inteligencia;
+     }
 
      public int getForca() {
           return forca;
