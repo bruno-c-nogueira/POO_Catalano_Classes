@@ -1,9 +1,9 @@
 package game.equipamento;
 
 public class BotaBronze extends Bota {
-    private int forca ;
-    private int agilidade ;
-    private int inteligencia ;
+    private int forca;
+    private int agilidade;
+    private int inteligencia;
 
     public BotaBronze() {
         this.forca = 1;
@@ -16,9 +16,6 @@ public class BotaBronze extends Bota {
         return forca;
     }
 
-    public void setForca(int forca) {
-        this.forca = forca;
-    }
 
     @Override
     public int getAgilidade() {
@@ -34,7 +31,4 @@ public class BotaBronze extends Bota {
         return inteligencia;
     }
 
-    public void setInteligencia(int inteligencia) {
-        this.inteligencia = inteligencia;
-    }
 }
