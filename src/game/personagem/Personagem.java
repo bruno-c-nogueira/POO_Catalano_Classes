@@ -19,26 +19,29 @@ public abstract class Personagem {
     }
 
     public void equiparBota(Bota bota){
+        /*
+         Remove se tiver bota equipada e seta novos dados.
+         */
         if (this.bota != null) {
             this.forca -= this.bota.getForca();
             this.agilidade -= this.bota.getAgilidade();
             this.inteligencia -= this.bota.getInteligencia();
             this.bota = null;
         }
+        this.bota = bota;
         this.forca += bota.getForca();
         this.agilidade += bota.getAgilidade();
         this.inteligencia += bota.getInteligencia();
-        this.bota = bota;
         init();
     }
 
     @Override
     public String toString() {
         return "{" +
-                "forca=" + forca +
-                ", agilidade=" + agilidade +
-                ", inteligencia=" + inteligencia +
-                ", hp=" + hp +
-                ", mana=" + mana +'}';
+                "forca=" + this.forca +
+                ", agilidade=" + this.agilidade +
+                ", inteligencia=" + this.inteligencia +
+                ", hp=" + this.hp +
+                ", mana=" + this.mana +'}';
     }
 }
