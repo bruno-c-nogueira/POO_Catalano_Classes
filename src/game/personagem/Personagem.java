@@ -39,22 +39,24 @@ public abstract class Personagem {
          Remove se tiver bota equipada e seta novos dados.
          */
         if (this.bota != null) {
-            this.forca -= this.bota.getForca();
-            this.agilidade -= this.bota.getAgilidade();
-            this.inteligencia -= this.bota.getInteligencia();
+            this.setForca(this.getForca() - this.bota.getForca());
+            this.setAgilidade(this.getAgilidade() - this.bota.getAgilidade());
+            this.setInteligencia(this.getInteligencia() - this.bota.getInteligencia());
             this.bota = null;
         }
         this.bota = bota;
-        this.forca += bota.getForca();
-        this.agilidade += bota.getAgilidade();
-        this.inteligencia += bota.getInteligencia();
+        this.setForca(this.getForca() + bota.getForca());
+        this.setAgilidade(this.getAgilidade() + bota.getAgilidade());
+        this.setInteligencia(this.getInteligencia() + bota.getInteligencia());
         init();
     }
 
     public int getForca() {
         return forca;
     }
-
+    /*
+    Set Como protected, para ficar visível caso as classe filhas ou no mesmo pacote (game.personagem;) possam modificar.
+     */
     protected void setForca(int forca) {
         if (forca > 0)
             this.forca = forca;

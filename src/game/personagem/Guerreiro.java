@@ -8,7 +8,7 @@ public class Guerreiro extends Personagem{
 
     @Override
     public void levelUp() {
-        super.levelUp(3, 1, 1);
+        this.levelUp(3, 1, 1);
     }
 
     @Override
