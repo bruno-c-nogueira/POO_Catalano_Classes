@@ -8,7 +8,7 @@ public class Mago extends Personagem {
 
     @Override
     public void levelUp() {
-        super.levelUp(1, 1, 3);
+        this.levelUp(1, 1, 3);
     }
 
     @Override

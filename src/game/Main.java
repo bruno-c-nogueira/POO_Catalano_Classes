@@ -22,6 +22,7 @@ public class Main {
         guerreiro.equiparBota(new BotaBronze());
         System.out.println(guerreiro);
 
+
         System.out.println("ARQUEIRO");
         Arqueiro arqueiro = new Arqueiro();
         System.out.println("INICIALIZANDO");
